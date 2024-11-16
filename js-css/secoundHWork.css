@@ -1,0 +1,76 @@
+:root {
+    --primary-color:#f7f7f7;
+    --secoundary-color:rgba(245, 245, 245, 0.651);
+    --secoundary-color:rgb(255, 255, 255);
+    --Third-color: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
+    --forth-color: linear-gradient( 135deg, #E2B0FF 10%, #9F44D3 100%);
+   --act-color:#4a92e6;
+
+
+    --text-gradients1: linear-gradient( 109.6deg,  rgba(228,107,232,1) 11.2%, rgba(87,27,226,1) 96.7% );
+   
+    --topic-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+.secoundHWork{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.homeWork-title {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    color: var(--act-color);
+    font-weight: 900;
+}
+.bulb-container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+.bulb-container .bulb-box {
+    height:500px;
+    width: 25%;
+    /* background: var(--secoundary-color); */
+    background: white;
+
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    overflow: hidden;
+    /* position: relative; */
+}
+
+.bulb-container .bulb-box img {
+    width: 100%;
+    object-fit: contain;
+    /* position: absolute; */
+
+}
+.bulb-btn {
+    height: 500px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+.bulb-btn button {
+    padding:10px 20px;
+    border: none;
+    background-color: var(--act-color);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}

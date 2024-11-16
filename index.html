@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./js-css/firstClass.css">
+    <link rel="stylesheet" href="./js-css/demo1.css">
+    <link rel="stylesheet" href="./js-css/secoundHWork.css">
+    <link rel="stylesheet" href="./js-css/style.css">
+    <link rel="stylesheet" href="./responsive/responsive.css">
+    <link rel="stylesheet" href="./js-css/responsive.css">
+    
+</head>
+<body>
+    
+    <div class="container">
+        <!-- Left Column - Menu -->
+        <div class="sidebar">
+            <div class="logo">Javascript</div>
+            <div class="menu-toggle" onclick="toggleMenu()"> ☰ </div>
+            
+          <ul class="menu-items">
+            <li><a href="#" onclick="showPage('home')">Home</a></li>
+            <li>
+              <a href="#" onclick="toggleSubmenu(event, 'project1-submenu')"><i class="material-icons" style="font-size:16px">ondemand_video</i> Video Class</a>
+              <ul class="submenu" id="project1-submenu">
+                <li><a href="#" onclick="showPage('project1')">Class → 01</a></li>
+                <li><a href="#" onclick="showPage('project1-details')">Class → 02</a></li>
+                <li><a href="#" onclick="showPage('project2-details')">Class → 03</a></li>
+                <!-- <li><a href="#" onclick="showPage('project2-details')">Javascript</a></li> -->
+              </ul>
+            </li>
+              <!-- * Home Work Box Menu START-->
+            <li>
+              <a href="#" onclick="toggleSubmenu(event, 'project2-submenu')"><i class="material-icons " style="font-size:16px">assignment</i>FDL 2401 Home-Work</a>
+              <ul class="submenu" id="project2-submenu">
+                <li><a href="#" onclick="showPage('project2')">Class → 01 Home-Work</a></li>
+                <li><a href="#" onclick="showPage('homeWork2-details')">Class → 02 Home-Work</a></li>
+                <li><a href="#" onclick="showPage('homeWork3-details')">Class → 03 Home-Work</a></li>
+              </ul>
+            </li>
+            <!--  Home Work Box Menu END-->
+
+            <li>
+              <a href="#" onclick="toggleSubmenu(event, 'project3-submenu')"> <i class="material-icons" style="font-size:16px">work</i>  Project</a>
+              <ul class="submenu" id="project3-submenu">
+                <li><a href="#" onclick="showPage('project3')">Begunner Project</a></li>
+                <li><a href="#" onclick="showPage('project3-details')">Entermideat</a></li>
+                <li><a href="#" onclick="showPage('project3-details')">Advanced</a></li>
+              </ul>
+            </li>
+
+
+            <li>
+              <a href="#" onclick="toggleSubmenu(event, 'project4-submenu')"> <i class="material-icons" style="font-size:16px">input</i> Demo</a>
+              <ul class="submenu" id="project4-submenu">
+                </li>
+                <li><a href="#" onclick="showPage('Demo1')">Demo</a></li>
+                <li><a href="#" onclick="showPage('project5-details')">Entermideat</a></li>
+                <li><a href="#" onclick="showPage('project6-details')">Advanced</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      
+        <!-- Right Column - Content -->
+         <div class="right-cloumn">
+            <div class="top-logo">
+                <h1> Zer0➡️Hero Javascript Learning-V<sub>1</sub></h1>
+            </div>
+            <div class="content" id="content">
+                <div id="home" class="page active">Welcome to the Homepage!</div>
+                <div id="project1" class="page">
+                    
+
+                </div>
+                <div id="project1-details" class="page">Detailed information about Project 1.</div>
+                <div id="project2-details" class="page">Detailed information about Project 2 .</div>
+
+<!-- ! Home-Work Section START .................................................................................  -->
+              <!-- * Class 01 Home Work BOX START -->
+                <div id="project2" class="page">
+                <div class="row app-box d-flex flex-row ">
+                  <div class=" col-3 .col-sm- topic-name d-flex flex-column ">
+                      <h4> Weather Converter </h4>
+                      <p style="font-weight: bold;">Topic 01   <br><span style="color: blueviolet;">
+                          02-11-2024
+                      </span>    </p>
+                      <p> This App creat only using javascript veriable everyone can make this only using one trick </p>
+                      <a href="#">Get Source Code</a>
+                  </div>
+                  <div class="col-8  d-flex  first-box">
+                      <div class="celcies-f ">
+                          <input type="number" id="fahrenheit-input" placeholder=" Type Your Celcies Number">
+                          <button onclick="fahrenheitInput()" type="submit"> Ok</button>
+                          <h1 id="fahrenheit-result">
+                              Celcies to Fahrenheit
+                          </h1>
+                      </div>
+                      <div class="celcies-f">
+                          <input type="number" id="celsius-input" placeholder=" Type Your Fahrenheit Number">
+                          <button onclick="celsiusInput()" type="submit"> Ok</button>                 
+                          <h1 id="celsius-result">
+                               Fahrenheit to Celcies 
+                          </h1>
+                      </div>
+                  </div>
+              </div>
+
+                </div>
+                                                                                                      <!--  Class 01 Home Work BOX END -->
+
+
+
+
+                                                                                 <!--*  Class 2 Home-Work START -->
+
+              <div id="homeWork2-details" class="page secoundHWork">
+                <div class="homeWork-title">
+                  <h1> Javascript Secound Home Work</h1>
+                </div>
+
+                <div class="bulb-container">
+                  <div class="bulb-box">
+                     <img class="bulbon" src="./img/light-of.jpg" alt="">
+                     <!-- <img src="https://i.pinimg.com/originals/87/b2/1a/87b21a7456259e36af79cd17db58971a.jpg" alt=""> -->
+                  </div>
+                  <div class="bulb-btn">
+                    <button class="onBtn">On bulb</button>
+                    <button class="offbtn">OFF bulb</button>
+                  </div>
+                </div>
+              </div>
+                                                                                  <!-- Class 2 Home-Work START -->
+
+
+
+
+                                                                                                     <!--*  Class 3 Home-Work START -->
+              <div id="homeWork3-details" class="page">
+                <h1> Javascript Class 3 Home-Work </h1>
+              </div>
+                                                                                                          <!-- Class 3 Home-Work START -->
+
+
+<!-- ! Home-Work Section END...............................................................  -->
+
+
+
+                <div id="project2-details" class="page">Detailed information about Project 2.</div>
+
+                <!-- * Project Items,  Simple Calculator START -->
+                
+                <div id="project3" class="page begunner-project"> 
+                    <div class="begunner-dittels">
+                      <h1> Project List For Bugenner</h1>
+                      <p> Here is Some Bugenner JAvascript Learner Projects. Every Bugenner Should Make This Project. <br> Some Of List Here</p>
+                      <ol>
+                        <li>
+                          <a href="#simple-calculator">Simple Calculator</a> </li>
+                          <li>   <a href="#">To-Do List </a></li>
+                          <li>   <a href="#">Digital Clock  </a></li>
+                          <li>   <a href="#">Count Down Timer </a></li>
+                          <li>   <a href="#">Tip Calculator </a></li>
+                          <li>   <a href="#">Intarective Quiz </a></li>
+                          <li>   <a href="#">weather App </a></li>
+                          <li>   <a href="#">Random Quote Genaretor </a></li>
+                          <li>   <a href="#"> Color Flipper</a></li>
+                          <li>   <a href="#"> Age Calculator </a></li>
+                        
+                      </ol>
+                    </div>
+
+                    <section class="simple-calculator" id="simple-calculator">
+                  <div class="number">
+                  <div class="input-box">
+                      <input type="number" id="number-input" placeholder="Number 1">
+                      <input type="number" id="number-input2" placeholder="Number2">
+                  </div>
+                  <div class="c-button ">
+                      <button onclick="calculate('add')"> <img src="https://img.icons8.com/?size=100&id=44038&format=png&color=000000" alt=""> </button>
+                      <button onclick="calculate('subtract')">   <img src="https://img.icons8.com/?size=100&id=48319&format=png&color=000000" alt="">  </button>
+                      <button onclick="calculate('multiply')">   <img src="https://img.icons8.com/?size=100&id=110627&format=png&color=000000" alt=""></button>
+                      <button onclick="calculate('divide')">   <img src="https://img.icons8.com/?size=100&id=110626&format=png&color=000000" alt=""></button>  
+                  </div>
+              
+                  <h1 id="plus-result"> Display Result </h1>
+              </div>
+
+              <div class="source-file">
+                  <h1> To Get Source Code Click here </h1>
+              </div>
+            </section>
+
+            </div>
+
+            <!-- * Project Items, Simple Calculator END -->
+
+              
+                                                                                                           <!-- ! DEMO Section START -->
+                                                                                                           
+            <div id="Demo1" class="page main-demo1">   <!-- * Demo 1 START -->
+              <div class="demo-container">
+                  <div class="demo-title1"> <!-- * Demo Title ----1  -->
+
+                    <h1> Image Cart </h1>
+                  </div>
+                  <div class="demo-slider">
+                      <img class="slider1" src="https://wallpaperaccess.com/full/1125168.jpg" alt="">
+
+
+
+                      <div class="btn-box">
+                        <button class="sbtn sliderbtn1">
+                          <img src="https://wallpaperaccess.com/full/2492637.jpg" alt="">
+                        </button>
+                      <button class="sbtn sliderbtn2">
+                        <img src="https://4.bp.blogspot.com/-i1T0lQCyU1Y/UvuNVtPmcQI/AAAAAAAAB9o/_GM25scy6aU/s1600/bmw+black+edition4.jpg" alt="">
+                      </button>
+                      <button class="sbtn sliderbtn3">
+                        <img src="https://wallpapercave.com/wp/wp7035054.jpg" alt="">
+                      </button>
+                      <button class="sbtn sliderbtn4">
+                        <img src="https://wallpaperaccess.com/full/338543.jpg" alt="">
+                      </button>
+                      <button class="sbtn sliderbtn5">
+                        <img src="https://wallpaperaccess.com/full/1125168.jpg" alt="">
+                      </button>
+                      </div>
+                  </div>
+              </div>
+            </div>  <!-- * Demo 1 END -->
+
+
+            <div id="project5-details" class="page">Demo Page 2</div>
+            <div id="project6-details" class="page">Demo Page Three</div>
+                                                                                                               <!-- ! DEMO Section END -->
+
+              </div> <!--* Content END -->
+            </div>
+      
+         </div>
+
+       
+         <script src="./my-js/firstClass.js"></script>
+         <script src="./my-js/app.js"></script>
+         <script src="./my-js/secoundHWork.js"></script>
+         <script src="./my-js/demo1.js"></script>
+    <script src="./js/pageSetup.js"></script>
+
+</body>
+</html>

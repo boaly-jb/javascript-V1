@@ -1,0 +1,99 @@
+@media only screen and (min-width: 1025px) {
+    .navbar {
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) { 
+    .app-box {
+        gap: 30px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .topic-name {
+        width: 90%;
+    }
+    .first-box {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: 50px; */
+        padding-bottom: 50px;
+
+    }
+    .celcies-f {
+        width: 90%;
+        height: auto;
+    }
+    .number  {
+        width: 90%;
+    }
+ }
+
+
+
+ /* Secound Home Work START */
+ @media only screen and (max-width: 768px) {
+    .secoundHWork {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+        gap: 20px;
+    }
+    .homeWork-title {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .bulb-container {
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        /* overflow: hidden; */
+    }
+    .bulb-container .bulb-box {
+        width: 90%;
+        height: auto;
+        overflow: hidden;
+    }
+    .bulb-container .bulb-box img {
+        height: 100%;
+        object-fit: contain;
+    }
+    .bulb-btn {
+        height: 100px;
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+ }
+ /* Secound Home Work END */
+
+ @media only screen and (max-width: 768px)  {
+    .demo-slider {
+        height: 450px;
+    }
+    .demo-slider img {
+        height: 100%;
+        object-fit: cover;
+    }
+    .demo-slider .btn-box {
+        width: 80%;
+        bottom: 30px;
+    }
+    .sbtn {
+        width: 20%;
+    }
+    .sbtn img {
+        height: 100%;
+        object-fit:cover;
+    }
+ }
